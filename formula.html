@@ -1,0 +1,132 @@
+<html>
+
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+background-color: yellow;
+color: cyan;
+}
+
+body {
+background-color: #add8e6;
+}
+
+</style>
+</head>
+<body>
+
+<b><u><h1>Formulas</h1></u><b>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="list.html">The List</a></li>
+  <li><a href="contacts.html">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<hr></hr>
+
+</body>
+
+<style>
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+dt {
+  float: center;
+}
+
+dt a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+dt a:hover {
+background-color: #fdfd96;
+color:  #aec6cf;
+}
+
+body {
+background-color: #add8e6;
+}
+
+
+</style>
+
+<body>
+
+
+<input id="searchbar" onkeyup="search_ml()" type="text"
+name="search" placeholder="Search formulas..">
+
+
+
+
+<!-- linking javascript -->
+<script src="./ml.js"></script>
+</body>
+
+
+
+
+
+<hr></hr>
+
+
+<script>
+
+// JavaScript code
+function search_ml() {
+let input = document.getElementById('searchbar').value
+input=input.toLowerCase();
+let x = document.getElementsByClassName('ml');
+
+for (i = 0; i < x.length; i++) {
+if (!x[i].innerHTML.toLowerCase().includes(input)) {
+x[i].style.display="none";
+}
+else {
+x[i].style.display="list-item";
+}
+}
+}
+
+
+</script>
+
+<ol id='list' style="list-style-type:none;">
+<dt class="ml"><a href="quadratic.html">Quadratic</a></dt>
+<dt class="ml"><a href="cosine.html">Cosine Rule</a></dt>
+<dt class="ml"><a href="sine.html">Sine Rule</a></dt>
+<dt class="ml"><a href="triangle.html">Area Of A Triangle</a></dt>
+</ol>
+
+</html>
