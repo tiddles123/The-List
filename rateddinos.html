@@ -1,0 +1,226 @@
+<html>
+
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+background-color: yellow;
+color: cyan;
+}
+
+body {
+background-color: #add8e6;
+}
+
+</style>
+</head>
+<body>
+
+<b><u><h1>Formulas</h1></u><b>
+<ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="list.html">The List</a></li>
+  <li><a href="contacts.html">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<hr></hr>
+
+</body>
+
+<style>
+
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: gray;
+}
+
+dt {
+  float: center;
+}
+
+dt a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+dt a:hover {
+background-color: #fdfd96;
+color:  #aec6cf;
+}
+
+body {
+background-color: #add8e6;
+}
+
+
+</style>
+
+<body>
+
+
+<input id="searchbar" onkeyup="search_ml()" type="text"
+name="search" placeholder="Search dinosaurs..">
+
+
+
+
+<!-- linking javascript -->
+<script src="./ml.js"></script>
+</body>
+
+
+
+
+
+<hr></hr>
+
+
+<script>
+
+// JavaScript code
+function search_ml() {
+let input = document.getElementById('searchbar').value
+input=input.toLowerCase();
+let x = document.getElementsByClassName('ml');
+
+for (i = 0; i < x.length; i++) {
+if (!x[i].innerHTML.toLowerCase().includes(input)) {
+x[i].style.display="none";
+}
+else {
+x[i].style.display="list-item";
+}
+}
+}
+
+
+</script>
+
+<ol id='list'>
+<dt class="ml"><a href="spino.html">1.Spinosaurus</a></dt>
+<dt class="ml"><a href="amarga.html">2.Amargasaurus</a></dt>
+<dt class="ml"><a href="quetz.html">3.Quetzalcoatlus</a></dt>
+<dt class="ml"><a href="bary.html">4.Baryonyx</a></dt>
+<dt class="ml"><a href="sucho.html">5.Suchomimus</a></dt>
+<dt class="ml"><a href="theri.html">6.Therizinosaur</a></dt>
+<dt class="ml"><a href="allo.html">7.Allosaurus</a></dt>
+<dt class="ml"><a href="atroci.html">8.Atrociraptor</a></dt>
+<dt class="ml"><a href="moros.html">9.Morus Intrepidus</a></dt>
+<dt class="ml"><a href="pyro.html">10.Pyroraptor</a></dt>
+<dt class="ml"><a href="ovi.html">11.Oviraptor</a></dt>
+<dt class="ml"><a href="carno.html">12.Carnotaurus</a></dt>
+<dt class="ml"><a href="compy.html">13.Compsognathus</a></dt>
+<dt class="ml"><a href="lystro.html">14.Lystrosaurus</a></dt>
+<dt class="ml"><a href="deinony.html">15.Deinonychus</a></dt>
+<dt class="ml"><a href="trex.html">16.Tyrannosaurus Rex</a></dt>
+<dt class="ml"><a href="albert.html">17.Albertosaurus</a></dt>
+<dt class="ml"><a href="giga.html">18.Giganotosaurus</a></dt>
+<dt class="ml"><a href="mono.html">19.Monolophosaurus</a></dt>
+<dt class="ml"><a href="acro.html">20.Acrocanthusaurus</a></dt>
+<dt class="ml"><a href="mega.html">21.Megalosaurus</a></dt>
+<dt class="ml"><a href="cerato.html">22.Ceratosaurus</a></dt>
+<dt class="ml"><a href="lio.html">23.Liopleurodon</a></dt>
+<dt class="ml"><a href="majung.html">24.Majungasaurus</a></dt>
+<dt class="ml"><a href="raptor.html">25.Velociraptor</a></dt>
+<dt class="ml"><a href="elasma.html">26.Elasmosaurus</a></dt>
+<dt class="ml"><a href="atten.html">27.Attenborosaurus</a></dt>
+<dt class="ml"><a href="mosa.html">26.Mosasaurus</a></dt>
+<dt class="ml"><a href="krono.html">27.Kronosaurus</a></dt>
+<dt class="ml"><a href="plesio.html">28.Plesiosaurus</a></dt>
+<dt class="ml"><a href="alamo.html">29.Alamosaurus</a></dt>
+<dt class="ml"><a href="qian.html">30.Qianzhousaurus</a></dt>
+<dt class="ml"><a href="cryo.html">31.Cryolophosaurus</a></dt>
+<dt class="ml"><a href="carchara.html">32.Carcharodontosaurus</a></dt>
+<dt class="ml"><a href="coel.html">33.Coelophysis</a></dt>
+<dt class="ml"><a href="metria.html">34.Metriacanthosaurus</a></dt>
+<dt class="ml"><a href="troodon.html">35.Troodon</a></dt>
+<dt class="ml"><a href="styxo.html">36.Styxosaurus</a></dt>
+<dt class="ml"><a href="austra.html">37.Australovenator</a></dt>
+<dt class="ml"><a href="herrer.html">38.Herrerasaurus</a></dt>
+<dt class="ml"><a href="tape.html">39.Tapejara</a></dt>
+<dt class="ml"><a href="dime.html">40.Dimetrodon</a></dt>
+<dt class="ml"><a href="cear.html">41.Cearadactylus</a></dt>
+<dt class="ml"><a href="pt.html">42.Pteranadon</a></dt>
+<dt class="ml"><a href="pro.html">43.Proceratosaurus</a></dt>
+<dt class="ml"><a href="maar.html">44.Maaradactylus</a></dt>
+<dt class="ml"><a href="kentro.html">45.Kentrosaurus</a></dt>
+<dt class="ml"><a href="struthio.html">46.Struthiomimus</a></dt>
+<dt class="ml"><a href="anky.html">47.Ankylosaurus</a></dt>
+<dt class="ml"><a href="dilo.html">48.Dilophosaurus</a></dt>
+<dt class="ml"><a href="barba.html">49.Barbaridactylus</a></dt>
+<dt class="ml"><a href="dimorph.html">50.Dimorphodon</a></dt>
+<dt class="ml"><a href="tylo.html">51.Tylosaurus</a></dt>
+<dt class="ml"><a href="ichthy.html">52.Ichthyosaurus</a></dt>
+<dt class="ml"><a href="tropeo.html">53.Tropeognathus</a></dt>
+<dt class="ml"><a href="geo.html">54.Geosternbergia</a></dt>
+<dt class="ml"><a href="camara.html">55.Camarasaurus</a></dt>
+<dt class="ml"><a href="dread.html">56.Dreadnoughtus</a></dt>
+<dt class="ml"><a href="nig.html">57.Nigersaurus</a></dt>
+<dt class="ml"><a href="apato.html">58.Apatosaurus</a></dt>
+<dt class="ml"><a href="brachio.html">59.Brachiosaurus</a></dt>
+<dt class="ml"><a href="diplo.html">60.Diplodocus</a></dt>
+<dt class="ml"><a href="mamen.html">61.Mamenchisaurus</a></dt>
+<dt class="ml"><a href="minmi.html">62.Minmi</a></dt>
+<dt class="ml"><a href="draco.html">63.Dracorex</a></dt>
+<dt class="ml"><a href="igua.html">64.Iguanodon</a></dt>
+<dt class="ml"><a href="galli.html">65.Gallimimus</a></dt>
+<dt class="ml"><a href="stego.html">66.Stegosaurus</a></dt>
+<dt class="ml"><a href="chasmo.html">67.Chasmosaurus</a></dt>
+<dt class="ml"><a href="edmont.html">68.Edmontosaurus</a></dt>
+<dt class="ml"><a href="dryo.html">69.Dryosaurus</a></dt>
+<dt class="ml"><a href="maia.html">70.Maiasaurus</a></dt>
+<dt class="ml"><a href="chung.html">71.Chungkingosaurus</a></dt>
+<dt class="ml"><a href="penta.html">72.Pentaceratops</a></dt>
+<dt class="ml"><a href="wuer.html">73.Wuerhosaurus</a></dt>
+<dt class="ml"><a href="toro.html">74.Torosaurus</a></dt>
+<dt class="ml"><a href="ourana.html">75.Ouranasaurus</a></dt>
+<dt class="ml"><a href="nasuto.html">76.Nasutoceratops</a></dt>
+<dt class="ml"><a href="pachyr.html">77.Pachyrhinosaurus</a></dt>
+<dt class="ml"><a href="sino.html">78.Sinoceratops</a></dt>
+<dt class="ml"><a href="pachyc.html">79.Pachycephalosaurus</a></dt>
+<dt class="ml"><a href="huay.html">80.Huayangosaurus</a></dt>
+<dt class="ml"><a href="para.html">81.Parasaurolophus</a></dt>
+<dt class="ml"><a href="nodo.html">82.Nodosaurus</a></dt>
+<dt class="ml"><a href="pola.html">83.Polacanthus</a></dt>
+<dt class="ml"><a href="archae.html">84.Archaeornithomimus</a></dt>
+<dt class="ml"><a href="styra.html">85.Styracosaurus</a></dt>
+<dt class="ml"><a href="tsint.html">86.Tsintaosaurus</a></dt>
+<dt class="ml"><a href="crich.html">87.Crichtonsaurus</a></dt>
+<dt class="ml"><a href="stygi.html">88.Stygimoloch</a></dt>
+<dt class="ml"><a href="homa.html">89.Homalocephale</a></dt>
+<dt class="ml"><a href="sauro.html">90.Sauropelta</a></dt>
+<dt class="ml"><a href="cory.html">91.Cortyhosaurus</a></dt>
+<dt class="ml"><a href="euop.html">92.Euoplocephalus</a></dt>
+<dt class="ml"><a href="olo.html">93.Olorotitan</a></dt>
+<dt class="ml"><a href="mutta.html">94.Muttaburrasaurus</a></dt>
+<dt class="ml"><a href="gigant.html">95.Gigantspinosaurus</a></dt>
+<dt class="ml"><a href="trike.html">96.Triceratops</a></dt>
+</ol>
+
+</html>
